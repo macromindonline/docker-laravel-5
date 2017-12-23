@@ -1,4 +1,4 @@
-FROM macromind/docker-apache-70:1.0
+FROM macromind/docker-apache-php70:1.0
 MAINTAINER MACROMIND Online <idc@macromind.online>
 LABEL description="Laravel 5.*"
 
