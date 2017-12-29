@@ -1,4 +1,4 @@
-FROM macromind/docker-apache-php70
+FROM macromind/docker-apache-php70:latest
 MAINTAINER MACROMIND Online <idc@macromind.online>
 LABEL description="Laravel 5.*"
 
@@ -8,7 +8,5 @@ RUN /usr/sbin/a2dissite '*' && /usr/sbin/a2ensite 000-docker
 COPY apache2-foreground /usr/local/bin/
 
 EXPOSE 80
-
-WORKDIR /var/www/html/
 
 CMD ["apache2-foreground"]
